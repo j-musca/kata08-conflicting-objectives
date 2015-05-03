@@ -1,24 +1,21 @@
 package org.example.readable;
 
 import com.google.common.collect.ImmutableSet;
+import org.example.file.DictionaryFile;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Collection;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 public class EnglishDictionary {
 
-    private static final Path WORD_FILE_PATH = Paths.get("src/main/resources/english-words.txt");
     private final Set<String> englishWords;
 
     public EnglishDictionary() {
         try {
-            englishWords = ImmutableSet.copyOf(Files.readAllLines(WORD_FILE_PATH));
+            englishWords = ImmutableSet.copyOf(com.google.common.io.Files.readLines(DictionaryFile.get(), StandardCharsets.UTF_8));
         } catch (IOException e) {
             throw new RuntimeException("Could not read dictionary! Reason: " + e.getMessage(), e);
         }
