@@ -31,7 +31,7 @@ public class WordSplitter {
         boolean isExistingWordPair = false;
 
         for (int i = 0; i < characters.length && !isExistingWordPair; i++) {
-            final char currentCharacter = characters[0];
+            final char currentCharacter = characters[i];
             firstPart.append(currentCharacter);
             secondPart.deleteCharAt(0);
 

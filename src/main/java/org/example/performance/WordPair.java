@@ -12,18 +12,6 @@ public class WordPair {
         this.secondPart = secondPart;
     }
 
-    public String getOriginalWord() {
-        return originalWord;
-    }
-
-    public String getFirstPart() {
-        return firstPart;
-    }
-
-    public String getSecondPart() {
-        return secondPart;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
