@@ -3,6 +3,6 @@
 http://codekata.com/kata/kata08-conflicting-objectives/
 
 Benchmark                     Mode  Cnt    Score   Error  Units
-MyBenchmark.testExtensible   thrpt  200   64,192 ± 0,506  ops/s
-MyBenchmark.testPerformance  thrpt  200  128,993 ± 0,929  ops/s
-MyBenchmark.testReadable     thrpt  200  106,806 ± 0,695  ops/s
+- MyBenchmark.testExtensible   thrpt  200   64,192 ± 0,506  ops/s
+- MyBenchmark.testPerformance  thrpt  200  128,993 ± 0,929  ops/s
+- MyBenchmark.testReadable     thrpt  200  106,806 ± 0,695  ops/s
